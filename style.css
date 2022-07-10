@@ -1,0 +1,166 @@
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin:0px
+}
+
+.names {
+    font-family: 'Dancing Script', cursive;
+    font-size:48pt
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(hero1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter:brightness(90%)
+}
+
+.hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(hero2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter:brightness(90%)
+}
+
+.hero-content {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+    height: 80vh;
+    align-content:space-around
+}
+
+@media screen and (max-width: 600px), screen and(max-height: 600px) {
+    .hero-content {
+        margin-top:6rem
+    }
+}
+
+.hero-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 12rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    filter:drop-shadow(0px 0px 10px #222)
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size:8rem
+    }
+}
+
+@media screen and (max-width: 600px), screen and(max-height: 600px) {
+    .hero-title {
+        font-size: 3.6rem;
+        margin-top:6rem
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero-title {
+        font-size: 2.8rem;
+        margin-top:6rem
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    filter:drop-shadow(0px 0px 4px #222)
+}
+
+@media screen and (max-width: 600px), screen and(max-height: 600px) {
+    .hero-subtitle {
+        font-size: 1.2rem;
+        width:80%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero-subtitle {
+        font-size: 1rem;
+        width:90%
+    }
+}
+
+.background {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:4rem
+}
+
+.buttons {
+    margin-top: 2rem;
+    margin-bottom:2rem
+}
+
+.buttons .button {
+    width: 16rem;
+    margin-left: auto;
+    margin-right:auto
+}
+
+@media screen and (max-width: 600px), screen and(max-height: 600px) {
+    .buttons .button {
+        width:14rem
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .buttons .button {
+        width:12rem
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #dddddd;
+    text-decoration: none;
+    color: #000000
+}
